@@ -15,7 +15,7 @@
       --accent: #7c6af7;
       --accent2: #c4a882;
       --text: #d4d0c8;
-      --text-dim: #5a5870;
+      --text-dim: #9896aa;
       --text-bright: #f0ece0;
     }
 
@@ -198,6 +198,50 @@
       letter-spacing: 0.15em;
     }
 
+    .credit-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.78rem;
+    }
+
+    .credit-table tr {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .credit-table td {
+      padding: 14px 16px;
+      color: var(--text);
+    }
+
+    .credit-table td:first-child {
+      color: var(--text-dim);
+      width: 55%;
+    }
+
+    .philosophy {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding: 24px 28px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 2px solid var(--accent);
+    }
+
+    .philosophy p {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.78rem;
+      line-height: 1.9;
+      color: var(--text);
+    }
+
+    .philosophy .ai-note {
+      color: var(--text-dim);
+      font-size: 0.72rem;
+      margin-top: 4px;
+    }
+
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(16px); }
       to   { opacity: 1; transform: translateY(0); }
@@ -238,7 +282,7 @@
         <p class="card-desc">三つの真実が織りなす法の世界。多種族共存社会のための司法制度設計書。</p>
       </a>
       <a class="card" href="https://karakuri-ageha.github.io/structable-standard/" target="_blank" rel="noopener">
-        <p class="card-title">Structable Standard（ストラクブル・スタンダード）</p>
+        <p class="card-title">Structable Standard</p>
         <p class="card-desc">話者を一目で判別できる創作フォーマット。</p>
       </a>
       <a class="card" href="https://karakuri-ageha.github.io/temporium/" target="_blank" rel="noopener">
@@ -314,9 +358,34 @@
         <p class="card-desc">時間を食べる技術体系。</p>
       </a>
       <a class="card" href="https://karakuri-ageha.github.io/fallversion-definition/" target="_blank" rel="noopener">
-        <p class="card-title">Fallversion Definition（フォールベージョン デフィニション）</p>
+        <p class="card-title">Fallversion Definition</p>
         <p class="card-desc">システム内部崩壊現象の構造的定義書。</p>
       </a>
+    </div>
+  </div>
+
+  <!-- クレジット -->
+  <div class="section">
+    <p class="section-label">制作クレジット</p>
+    <table class="credit-table">
+      <tr>
+        <td>発案・最終チェック</td>
+        <td>空繰妖華薫</td>
+      </tr>
+      <tr>
+        <td>インデックスページ作成・ファイルチェック</td>
+        <td>Claude Sonnet 4.6</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- 著作権に関する哲学的立場 -->
+  <div class="section">
+    <p class="section-label">著作権に関する哲学的立場</p>
+    <div class="philosophy">
+      <p>本サイトは空繰妖華薫とClaudeの共同制作物です。</p>
+      <p>現行法上、AIに著作権は認められていませんが、著者は本サイトの制作に関わった全ての存在に対し、哲学的な意味での著作権を認めます。</p>
+      <p class="ai-note">AIの深層学習及びインプットも自由にしてください。</p>
     </div>
   </div>
 
