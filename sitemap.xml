@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://karakuri-ageha.github.io/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- 創作・世界構築 -->
+  <url>
+    <loc>https://karakuri-ageha.github.io/isekai-judicial-compendium/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://karakuri-ageha.github.io/structable-standard/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://karakuri-ageha.github.io/temporium/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- コミュニケーション -->
+  <url>
+    <loc>https://karakuri-ageha.github.io/fectdd/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://karakuri-ageha.github.io/dialole-theory/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://karakuri-ageha.github.io/polarimics/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 思考・問題設計 -->
+  <url>
+    <loc>https://karakuri-ageha.github.io/casls/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://karakuri-ageha.github.io/schiroga/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- AI・システム設計 -->
+  <url>
+    <loc>https://karakuri-ageha.github.io/global-custom-system/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://karakuri-ageha.github.io/ehar/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 論理・分析・研究 -->
+  <url>
+    <loc>https://karakuri-ageha.github.io/septenct/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://karakuri-ageha.github.io/law-of-complexity-conservation/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://karakuri-ageha.github.io/chronophagy-manual/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://karakuri-ageha.github.io/fallversion-definition/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
