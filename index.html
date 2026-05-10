@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>空繰妖華薫</title>
+  <meta name="description" content="空繰妖華薫による創作資料・理論研究の公開資料インデックス">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0a0c;
+      --surface: #111116;
+      --border: #1e1e28;
+      --accent: #7c6af7;
+      --accent2: #c4a882;
+      --text: #d4d0c8;
+      --text-dim: #5a5870;
+      --text-bright: #f0ece0;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Shippori Mincho', serif;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 50% at 20% 10%, rgba(124,106,247,0.06) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 40% at 80% 90%, rgba(196,168,130,0.05) 0%, transparent 60%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 80px 32px 120px;
+    }
+
+    header {
+      margin-bottom: 72px;
+      animation: fadeUp 0.8s ease both;
+    }
+
+    .eyebrow {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.25em;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      font-weight: 700;
+      color: var(--text-bright);
+      line-height: 1.2;
+      letter-spacing: 0.05em;
+      margin-bottom: 16px;
+    }
+
+    .subtitle {
+      font-family: 'DM Mono', monospace;
+      font-size: 12px;
+      color: var(--text-dim);
+      letter-spacing: 0.1em;
+    }
+
+    .divider {
+      width: 40px;
+      height: 1px;
+      background: var(--accent);
+      margin: 32px 0;
+      opacity: 0.5;
+    }
+
+    .official-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 24px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--accent2);
+      text-decoration: none;
+      font-family: 'DM Mono', monospace;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      transition: all 0.3s ease;
+    }
+
+    .official-link:hover {
+      border-color: var(--accent2);
+      background: rgba(196,168,130,0.05);
+      color: var(--text-bright);
+    }
+
+    .official-link::before { content: '→'; }
+
+    .section {
+      margin-top: 64px;
+      animation: fadeUp 0.8s ease both;
+    }
+
+    .section-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.3em;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 2px;
+      margin-top: 2px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 24px 28px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 2px;
+      background: var(--accent);
+      transform: scaleY(0);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      border-color: rgba(124,106,247,0.3);
+      background: rgba(124,106,247,0.03);
+    }
+
+    .card:hover::before { transform: scaleY(1); }
+
+    .card-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-bright);
+      letter-spacing: 0.03em;
+      line-height: 1.4;
+    }
+
+    .card-desc {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      line-height: 1.8;
+      font-family: 'DM Mono', monospace;
+      font-weight: 300;
+    }
+
+    footer {
+      margin-top: 100px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      animation: fadeUp 0.8s 0.8s ease both;
+    }
+
+    .footer-text, .footer-license {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      color: var(--text-dim);
+      letter-spacing: 0.15em;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .section:nth-child(2) { animation-delay: 0.1s; }
+    .section:nth-child(3) { animation-delay: 0.2s; }
+    .section:nth-child(4) { animation-delay: 0.3s; }
+    .section:nth-child(5) { animation-delay: 0.4s; }
+    .section:nth-child(6) { animation-delay: 0.5s; }
+
+    @media (max-width: 640px) {
+      .container { padding: 48px 20px 80px; }
+      .cards { grid-template-columns: 1fr; }
+      footer { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <p class="eyebrow">Karakuri Ageha</p>
+    <h1>空繰妖華薫</h1>
+    <p class="subtitle">GitHub Pages 公開資料インデックス</p>
+    <div class="divider"></div>
+    <a class="official-link" href="https://sites.google.com/view/karakuri-ageha" target="_blank" rel="noopener">
+      公式サイト（活動履歴・全作品一覧）
+    </a>
+  </header>
+
+  <!-- 創作・世界構築 -->
+  <div class="section">
+    <p class="section-label">創作・世界構築</p>
+    <div class="cards">
+      <a class="card" href="https://karakuri-ageha.github.io/isekai-judicial-compendium/" target="_blank" rel="noopener">
+        <p class="card-title">異世界司法制度大全</p>
+        <p class="card-desc">三つの真実が織りなす法の世界。多種族共存社会のための司法制度設計書。</p>
+      </a>
+      <a class="card" href="https://karakuri-ageha.github.io/structable-standard/" target="_blank" rel="noopener">
+        <p class="card-title">Structable Standard</p>
+        <p class="card-desc">話者を一目で判別できる創作フォーマット。</p>
+      </a>
+      <a class="card" href="https://karakuri-ageha.github.io/temporium/" target="_blank" rel="noopener">
+        <p class="card-title">テンポリウム</p>
+        <p class="card-desc">タイムパラドックス検証フレームワーク＆拡張モジュール集。</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- コミュニケーション -->
+  <div class="section">
+    <p class="section-label">コミュニケーション</p>
+    <div class="cards">
+      <a class="card" href="https://karakuri-ageha.github.io/fectdd/" target="_blank" rel="noopener">
+        <p class="card-title">FECTDD（フェクテッド）</p>
+        <p class="card-desc">センスじゃない。技術だ。約70のフレームワークを5分類で体系化した対話設計技術マニュアル。</p>
+      </a>
+      <a class="card" href="https://karakuri-ageha.github.io/dialole-theory/" target="_blank" rel="noopener">
+        <p class="card-title">ダイアロール理論</p>
+        <p class="card-desc">対話という名の盤面を制する者のための技術書。議論・交渉・駆け引きを体系化。</p>
+      </a>
+      <a class="card" href="https://karakuri-ageha.github.io/polarimics/" target="_blank" rel="noopener">
+        <p class="card-title">ポラリミクス</p>
+        <p class="card-desc">好き嫌いの力学モデル。</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- 思考・問題設計 -->
+  <div class="section">
+    <p class="section-label">思考・問題設計</p>
+    <div class="cards">
+      <a class="card" href="https://karakuri-ageha.github.io/casls/" target="_blank" rel="noopener">
+        <p class="card-title">CASLS（カシルス）</p>
+        <p class="card-desc">あらゆる問いに答える者のための設計図。Core Answer Segment Layer System。</p>
+      </a>
+      <a class="card" href="https://karakuri-ageha.github.io/schiroga/" target="_blank" rel="noopener">
+        <p class="card-title">Schiroga（スキロガ）</p>
+        <p class="card-desc">問いを構造的に設計する汎用問題設計フレームワーク。</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- AI・システム設計 -->
+  <div class="section">
+    <p class="section-label">AI・システム設計</p>
+    <div class="cards">
+      <a class="card" href="https://karakuri-ageha.github.io/global-custom-system/" target="_blank" rel="noopener">
+        <p class="card-title">Global Custom System</p>
+        <p class="card-desc">AIプラットフォームにおけるカスタム指示のモジュール化概念仕様書。</p>
+      </a>
+      <a class="card" href="https://karakuri-ageha.github.io/ehar/" target="_blank" rel="noopener">
+        <p class="card-title">EHAR（エファル）</p>
+        <p class="card-desc">エマージェントハルシネーションを活用した創発的探索シンクタンクシステム仕様書。</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- 論理・分析・研究 -->
+  <div class="section">
+    <p class="section-label">論理・分析・研究</p>
+    <div class="cards">
+      <a class="card" href="https://karakuri-ageha.github.io/septenct/" target="_blank" rel="noopener">
+        <p class="card-title">Septenct（セプテンクト）</p>
+        <p class="card-desc">七領域論理検証体系。あらゆる論理構築における品質基準・検証フレームワーク。</p>
+      </a>
+      <a class="card" href="https://karakuri-ageha.github.io/law-of-complexity-conservation/" target="_blank" rel="noopener">
+        <p class="card-title">複雑性保存の法則</p>
+        <p class="card-desc">フレームワークにおける複雑性の非消滅性と移転構造に関する記述的法則。</p>
+      </a>
+      <a class="card" href="https://karakuri-ageha.github.io/chronophagy-manual/" target="_blank" rel="noopener">
+        <p class="card-title">Chronophagy Manual（クロノファジー）</p>
+        <p class="card-desc">時間を食べる技術体系。</p>
+      </a>
+      <a class="card" href="https://karakuri-ageha.github.io/fallversion-definition/" target="_blank" rel="noopener">
+        <p class="card-title">Fallversion Definition</p>
+        <p class="card-desc">システム内部崩壊現象の構造的定義書。</p>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <span class="footer-text">© 空繰妖華薫</span>
+    <span class="footer-license">Creative Commons — 改変・再配布自由</span>
+  </footer>
+
+</div>
+</body>
+</html>
