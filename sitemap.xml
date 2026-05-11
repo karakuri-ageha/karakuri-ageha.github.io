@@ -28,8 +28,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-    <url>
+  <url>
     <loc>https://karakuri-ageha.github.io/archiscatus/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://karakuri-ageha.github.io/re-vive/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
