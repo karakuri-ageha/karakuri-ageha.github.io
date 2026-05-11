@@ -135,9 +135,38 @@
       letter-spacing: 0.3em;
       color: var(--text-dim);
       text-transform: uppercase;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
       padding-bottom: 12px;
       border-bottom: 1px solid var(--border);
+    }
+
+    .section-note {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      line-height: 1.9;
+      margin-bottom: 8px;
+    }
+
+    .section-note-list {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      line-height: 2;
+      margin: 8px 0 8px 1em;
+      list-style: none;
+    }
+
+    .section-note-list li::before {
+      content: '— ';
+      color: var(--accent);
+    }
+
+    .section-note-divider {
+      width: 100%;
+      height: 1px;
+      background: var(--border);
+      margin: 16px 0;
     }
 
     .cards {
@@ -288,9 +317,18 @@
     </a>
   </header>
 
-  <!-- 創作・世界構築 -->
+  <!-- 世界構築資料集 -->
   <div class="section">
-    <p class="section-label">創作・世界構築</p>
+    <p class="section-label">世界構築資料集</p>
+    <p class="section-note">創作の世界観構築に使える設定資料集。<br>そのままの使用・改変・再配布・商用利用、いずれも自由。クレジット表記は不要。</p>
+    <ul class="section-note-list">
+      <li>「どんな設定を使っているの？」</li>
+      <li>「何を参考にしてるの？」</li>
+      <li>「詳しく教えて」</li>
+      <li>「説明するのが面倒」</li>
+    </ul>
+    <p class="section-note">そう思ったとき、リンクを貼るだけで構わない。<br>詳細は各資料内のFAQを参照のこと。</p>
+    <div class="section-note-divider"></div>
     <div class="cards">
       <a class="card" href="https://karakuri-ageha.github.io/omntigia/" target="_blank" rel="noopener">
         <p class="card-title">オムンティギア</p>
@@ -300,17 +338,20 @@
         <p class="card-title">異世界司法制度大全</p>
         <p class="card-desc">三つの真実が織りなす法の世界。多種族共存社会のための司法制度設計書。</p>
       </a>
+      <a class="card" href="https://karakuri-ageha.github.io/archiscatus/" target="_blank" rel="noopener">
+        <p class="card-title">Archiscatus（アルキスカトゥス）</p>
+        <p class="card-desc">モジュラー設計による汎用ランクシステム構築ガイド。</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- フォーマット・仕様 -->
+  <div class="section">
+    <p class="section-label">フォーマット・仕様</p>
+    <div class="cards">
       <a class="card" href="https://karakuri-ageha.github.io/structable-standard/" target="_blank" rel="noopener">
         <p class="card-title">Structable Standard（ストラクブル・スタンダード）</p>
         <p class="card-desc">話者を一目で判別できる創作フォーマット。</p>
-      </a>
-      <a class="card" href="https://karakuri-ageha.github.io/temporium/" target="_blank" rel="noopener">
-        <p class="card-title">テンポリウム</p>
-        <p class="card-desc">タイムパラドックス検証フレームワーク＆拡張モジュール集。</p>
-      </a>
-      <a class="card" href="https://karakuri-ageha.github.io/archiscatus/" target="_blank" rel="noopener">
-        <p class="card-title">Archiscatus（アルキスカトゥス）</p>
-        <p class="card-desc">モジュラー設計による汎用ランクシステム構築ガイド</p>
       </a>
     </div>
   </div>
@@ -383,6 +424,10 @@
       <a class="card" href="https://karakuri-ageha.github.io/fallversion-definition/" target="_blank" rel="noopener">
         <p class="card-title">Fallversion Definition</p>
         <p class="card-desc">システム内部崩壊現象の構造的定義書。</p>
+      </a>
+      <a class="card" href="https://karakuri-ageha.github.io/temporium/" target="_blank" rel="noopener">
+        <p class="card-title">テンポリウム</p>
+        <p class="card-desc">タイムパラドックス検証フレームワーク＆拡張モジュール集。創作への応用も可。</p>
       </a>
     </div>
   </div>
