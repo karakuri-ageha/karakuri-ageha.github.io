@@ -19,16 +19,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://karakuri-ageha.github.io/structable-standard/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://karakuri-ageha.github.io/temporium/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://karakuri-ageha.github.io/archiscatus/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -44,6 +34,18 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- フォーマット・仕様 -->
+    <url>
+    <loc>https://karakuri-ageha.github.io/structable-standard/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+    <url>
+    <loc>https://karakuri-ageha.github.io/bonecd/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
   <!-- コミュニケーション -->
   <url>
     <loc>https://karakuri-ageha.github.io/fectdd/</loc>
@@ -103,6 +105,11 @@
   </url>
   <url>
     <loc>https://karakuri-ageha.github.io/fallversion-definition/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+    <url>
+    <loc>https://karakuri-ageha.github.io/temporium/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
